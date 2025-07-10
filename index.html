@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Art Week Logo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="grid"></div>
+        <div class="controls">
+            <div class="control-group">
+                <h3>Logo Controls</h3>
+                <div class="slider-container">
+                    <label for="opacity">Opacity: <span id="opacity-value">100</span>%</label>
+                    <input type="range" id="opacity" min="0" max="100" value="100">
+                </div>
+                <div class="slider-container">
+                    <label for="hue">Hue: <span id="hue-value">0</span>°</label>
+                    <input type="range" id="hue" min="0" max="360" value="0">
+                </div>
+                <div class="slider-container">
+                    <label for="motion">Motion: <span id="motion-value">0</span>%</label>
+                    <input type="range" id="motion" min="0" max="100" value="0">
+                </div>
+                <div class="slider-container">
+                    <label for="bgHue">Background: <span id="bg-hue-value">200</span>°</label>
+                    <input type="range" id="bgHue" min="0" max="360" value="200">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SVG Templates -->
+    <svg style="display: none;">
+        <defs>
+            <path id="top-left" d="M0,100 A100,100 0 0,1 100,0 L0,0 Z" fill="currentColor"/>
+            <path id="top-right" d="M0,0 A100,100 0 0,1 100,100 L100,0 Z" fill="currentColor"/>
+            <path id="bottom-left" d="M0,0 L100,0 A100,100 0 0,1 0,100 Z" fill="currentColor"/>
+            <path id="bottom-right" d="M0,0 L0,100 A100,100 0 0,1 100,0 Z" fill="currentColor"/>
+        </defs>
+    </svg>
+    
+    <script src="script.js"></script>
+</body>
+</html>
